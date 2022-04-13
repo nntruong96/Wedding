@@ -60,7 +60,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 // set your wedding date here
-var deadline = 'May 22 2022 17:30:00 GMT+0300';
+var deadline = 'May 15 2022 11:00:00 GMT+0300';
 if (countdown) {
   initializeClock('timer', deadline);
 }
