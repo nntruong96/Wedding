@@ -156,7 +156,7 @@ let showAlbum = () => {
       // DEEP LINKING
       locationHash: true,
       items: [
-        { src: "./img/a20.jpeg", srct: "./img/a20.jpg", },
+        { src: "./img/a20.jpg", srct: "./img/a20.jpg", },
         { src: "./img/a12.jpeg", srct: "./img/a12.jpeg", },
         { src: "./img/a2.jpeg", srct: "./img/a2.jpeg",  },
         { src: "./img/a3.jpeg", srct: "./img/a3.jpeg", },
@@ -169,10 +169,10 @@ let showAlbum = () => {
         { src: "./img/a10.jpeg", srct: "./img/a10.jpeg",  },
         { src: "./img/a11.jpeg", srct: "./img/a11.jpeg", },
         { src: "./img/a1.jpeg", srct: "./img/a1.jpeg", },
-        { src: "./img/a17.jpeg", srct: "./img/a17.jpeg", },
+        { src: "./img/a17.jpg", srct: "./img/a17.jpg", },
         { src: "./img/a18.jpg", srct: "./img/a18.jpg", },
-        { src: "./img/a19.jpeg", srct: "./img/a19.jpg", },
-        { src: "./img/a20.jpeg", srct: "./img/a20.jpg", },
+        { src: "./img/a19.jpg", srct: "./img/a19.jpg", },
+        { src: "./img/a20.jpg", srct: "./img/a20.jpg", },
         { src: "./img/a21.jpg", srct: "./img/a21.jpg", },
       ],
     });
