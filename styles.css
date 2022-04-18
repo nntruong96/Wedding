@@ -245,7 +245,7 @@ nav.nav::after {
 }
 section#album {
   /* background: #e38997; */
-  height: 563px;
+  /* height: 563px; */
   padding-top: 20px;
 }
 .albums {
@@ -253,9 +253,8 @@ section#album {
   width: 200px;
   height: 200px;
   margin: 120px auto;
-
   transform-style: preserve-3d;
-  animation: animate1 50s linear infinite;
+  animation: animate1 100s linear infinite;
 }
 .albums span img {
   width: 100%;
@@ -265,6 +264,9 @@ section#album {
   position: absolute;
   object-fit: cover;
 }
+/* .albums:hover {
+  animation-play-state: paused;
+} */
 .albums span {
   position: absolute;
   top: 0;
