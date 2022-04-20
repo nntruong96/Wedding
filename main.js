@@ -109,7 +109,7 @@ let showAlbum = () => {
       ],
       galleryMaxRows: 1,
       galleryDisplayMode: 'rows',
-      gallerySorting: 'random',
+      gallerySorting: 'titleAsc',
       thumbnailDisplayOrder: 'random',
 
       thumbnailHeight: '180',
