@@ -154,34 +154,23 @@ let showAlbum = () => {
 
       // DEEP LINKING
       locationHash: true,
-      items: [
-        { src: './img/a20.jpg', srct: './img/small/a20.jpg' },
-        { src: './img/a12.jpeg', srct: './img/small/a12.jpeg' },
-        { src: './img/a2.jpeg', srct: './img/small/a2.jpeg' },
-        { src: './img/a3.jpeg', srct: './img/small/a3.jpeg' },
-        { src: './img/a4.jpeg', srct: './img/small/a4.jpeg' },
-        { src: './img/a5.jpeg', srct: './img/small/a5.jpeg' },
-        { src: './img/a6.jpeg', srct: './img/small/a6.jpeg' },
-        { src: './img/a7.jpeg', srct: './img/small/a7.jpeg' },
-        { src: './img/a8.jpeg', srct: './img/small/a8.jpeg' },
-        { src: './img/a9.jpeg', srct: './img/small/a9.jpeg' },
-        { src: './img/a10.jpeg', srct: './img/small/a10.jpeg' },
-        { src: './img/a11.jpeg', srct: './img/small/a11.jpeg' },
-        { src: './img/a1.jpeg', srct: './img/small/a1.jpeg' },
-        { src: './img/a17.jpg', srct: './img/small/a17.jpg' },
-        { src: './img/a18.jpg', srct: './img/small/a18.jpg' },
-        { src: './img/a19.jpg', srct: './img/small/a19.jpg' },
-        { src: './img/a20.jpg', srct: './img/small/a20.jpg' },
-        { src: './img/a21.jpg', srct: './img/small/a21.jpg' },
-        { src: './img/a22.jpeg', srct: './img/small/a22.jpeg' },
-        { src: './img/a23.jpeg', srct: './img/small/a23.jpeg' },
-        { src: './img/a24.jpeg', srct: './img/small/a24.jpeg' },
-        { src: './img/a25.jpeg', srct: './img/small/a25.jpeg' },
-        { src: './img/a26.jpeg', srct: './img/small/a26.jpeg' },
-        { src: './img/a27.jpeg', srct: './img/small/a27.jpeg' },
-        { src: './img/a28.jpeg', srct: './img/small/a28.jpeg' },
-      ],
+      items: getItem(),
     });
   });
+};
+let getItem = () => {
+  let items = [];
+  for (let i = 1; i < 30; i++) {
+    items.push({
+      src: `./img/${i}.png`,
+      srct: `./img/small/${i}.png`,
+    });
+  }
+  return [
+    {
+      src: `./img/30.png`,
+      srct: `./img/small/30.png`,
+    },
+  ].concat(items);
 };
 showAlbum();

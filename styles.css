@@ -316,6 +316,7 @@ body {
   animation-timing-function: ease;
   transform: rotate(-6deg);
   animation-delay: var(--time-delay);
+  z-index: 99999;
 }
 
 .paw {
