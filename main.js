@@ -6,11 +6,11 @@ function getTimeRemaining(endtime) {
   var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
   var days = Math.floor(t / (1000 * 60 * 60 * 24));
   return {
-    total: t,
-    days: days,
-    hours: hours,
-    minutes: minutes,
-    seconds: seconds,
+    total: t > 0 ? t : 0,
+    days: t > 0 ? days : 0,
+    hours: t > 0 ? hours : 0,
+    minutes: t > 0 ? minutes : 0,
+    seconds: t > 0 ? seconds : 0,
   };
 }
 
@@ -60,7 +60,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 // set your wedding date here
-var deadline = 'May 15 2022 11:00:00 GMT+0300';
+var deadline = 'May 15 2022 11:00:00 GMT+0700';
 if (countdown) {
   initializeClock('timer', deadline);
 }
