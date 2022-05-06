@@ -160,7 +160,7 @@ let showAlbum = () => {
 };
 let getItem = () => {
   let items = [];
-  for (let i = 1; i < 30; i++) {
+  for (let i = 1; i < 31; i++) {
     items.push({
       src: `./img/${i}.png`,
       srct: `./img/small/${i}.png`,
@@ -168,8 +168,8 @@ let getItem = () => {
   }
   return [
     {
-      src: `./img/30.png`,
-      srct: `./img/small/30.png`,
+      src: `./img/31.png`,
+      srct: `./img/small/31.png`,
     },
   ].concat(items);
 };
